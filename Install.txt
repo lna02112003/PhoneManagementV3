@@ -1,0 +1,21 @@
+--Các bước để chạy dự án--
+Bước 1: Cài đặt
+	- Cài đặt gói composer https://getcomposer.org/download/
+	- Thực hiện các bước cài đặt https://hocwebchuan.com/tutorial/laravel/install_composer.php
+Bước 2: Giải nén
+	- Vào thư mục xampp/htdoc/mở Terminal/CMD với quyền Admin gõ composer create-project laravel/laravel PhoneManagement
+	- Sau khi tạo mới project giải nén file PhoneManagement.rar ra Desktop và copy toàn bộ file sau đó vào thư mục project PhoneManagement vừa tạo trong thư mục xampp/htdoc và paste vào
+Bước 2: Chạy dự án
+	- Sử dụng MySQL Workbean để chạy file PhoneManagement.sql đã có sẵn dữ liệu
+	- Mở project bằng Visual Studio Code
+Bước 3: Gõ lệnh hoàn thành setup
+	- Mở terminal trong Visual Studio Code
+	- Gõ trong terminal lần lượt:
+		+ composer update
+		+ php artisan storage:link
+Bước 4: Chạy dự án
+	- Khởi động Xampp Control Panel start 2 dòng Apache và MySQL
+	- Trong terminal của Visual Studio Code gõ php artisan serve
+	- Mở Google gõ http://127.0.0.1:8000/
+--Kết thúc--
+//Project được tạo bởi namanhle02112003@gmail.com, SĐT: 0969325914.
