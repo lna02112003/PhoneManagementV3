@@ -235,6 +235,7 @@ body {
 }
 
 .btn {
+    border: none;
     background-color: #3a9fff;
     border-radius: 20px;
     padding: 10px 25px;
@@ -803,7 +804,7 @@ table{
   font-weight: bold;
 }
 td{
-  padding: 5px 0 5px 15px;
+  padding: 10px;
   border: 1px solid #EEE
 }
 .tableitem .itemtext img{

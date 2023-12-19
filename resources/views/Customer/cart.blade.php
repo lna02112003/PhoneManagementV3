@@ -21,7 +21,7 @@
             <div class="header__menu">
                 <nav id="navbar" class="header__nav collapse">
                     <ul class="header__elenco">
-                        <li class="header__el"><a href="{{route('homepage')}}" class="header__link">Home</a></li>
+                        <li class="header__el"><a href="{{route('root')}}" class="header__link">Home</a></li>
                         <li class="header__el header__el--category">
                             <a href="#" class="header__link" id="category-link">Category</a>
                             <ul class="category-list" id="category-list">

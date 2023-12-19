@@ -157,13 +157,14 @@
         @endif
     </div>
 </div>
+    </div>  
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-xs-6">
                     <img class="footer__img" width="100px" src="{{asset('/Image/logo.png')}}">
                     <h1 class="footer__title">Nahinn<span class="footer__light">.com</span></h1>
-                </div>
+                </div>  
             </div>
         </div>
     </footer>

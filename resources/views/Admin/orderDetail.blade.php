@@ -73,7 +73,7 @@
                                     <td>{{$product->product_name}}</td>
                                     <td><img src="{{ asset('storage/' . $product->image) }}" alt="Product Image" width="80px"/></td>
                                     <td>{{$product->quantity}}</td>
-                                    <td>{{ number_format($product->unit_price/10, 0, ',', ',') . ',000đ' }}</td>
+                                    <td>{{ number_format($product->unit_price, 0, ',', ',') . ',000đ' }}</td>
                                     <td>{{$product->description}}</td>
                                 </tr>
                             @endforeach

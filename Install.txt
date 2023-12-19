@@ -1,21 +1,20 @@
---Các bước để chạy dự án--
-Bước 1: Cài đặt
-	- Cài đặt gói composer https://getcomposer.org/download/
-	- Thực hiện các bước cài đặt https://hocwebchuan.com/tutorial/laravel/install_composer.php
-Bước 2: Giải nén
-	- Vào thư mục xampp/htdoc/mở Terminal/CMD với quyền Admin gõ composer create-project laravel/laravel PhoneManagement
-	- Sau khi tạo mới project giải nén file PhoneManagement.rar ra Desktop và copy toàn bộ file sau đó vào thư mục project PhoneManagement vừa tạo trong thư mục xampp/htdoc và paste vào
-Bước 2: Chạy dự án
-	- Sử dụng MySQL Workbean để chạy file PhoneManagement.sql đã có sẵn dữ liệu
-	- Mở project bằng Visual Studio Code
-Bước 3: Gõ lệnh hoàn thành setup
-	- Mở terminal trong Visual Studio Code
-	- Gõ trong terminal lần lượt:
-		+ composer update
-		+ php artisan storage:link
-Bước 4: Chạy dự án
-	- Khởi động Xampp Control Panel start 2 dòng Apache và MySQL
-	- Trong terminal của Visual Studio Code gõ php artisan serve
-	- Mở Google gõ http://127.0.0.1:8000/
---Kết thúc--
-//Project được tạo bởi namanhle02112003@gmail.com, SĐT: 0969325914.
+Trong điều kiện bình thường hay sinh lý: vật chất trong thiên nhiên và các hoạt động của cơ thể liên quan mật thiết với nhau, thúc đẩy nhau để vận động không ngưng bằng cách tương sinh (hành nợ sinh hành kia, tạng nọ sinh tạng kia) hoặc chế ước lẫn nhau để giữ được thế quân bình bằng cách tương khắc (hành hoặc tạng này chế ước hành hoặc tạng kia).
+
+-Quy luật tương sinh:
+
+- Ngũ hành tương sinh là chỉ mối quan hệ sinh ra nhau một cách thứ tự, thúc đẩy nhau phát
+
+triển của Mộc, Hỏa, Thổ, Kim, Thúy (Mộc đốt cháy sinh ra lửa, lửa thiêu mọi vật thành tro bụi, thành đất trong lòng đất sinh ra kim loại là thể rắn chắc sinh thể lỏng nước); có nước sinh ra cây cối (mộc). Như vậy: mộc sinh hóa, hỏa sinh thổ, thổ sinh kim, kim sinh thùy, thủy sinh mộc. Sự tương sinh cứ lập đi, lặp lại không ngừng. Nếu đứng từ một hành mà nói thì sinh ra nó được gọi là “mẹ”, do nó sính ra được gọi là "con".
+
+Trong cơ thể con người: can mộc sinh tâm hỏa; tâm hỏa sinh tỷ thổ, tỷ thổ sinh phế kim phế kim sinh thận thủy, thận thủy sinh can mộc.
+
+-Quy luật tương khắc:
+
+- Ngũ hành tương khắc là chỉ mối quan hệ lần lượt ức chế lẫn nhau của mộc, thổ, thủy, hỏa, kim (mộc khắc thổ như rễ cây ăn sâu vào lòng đất, thổ khắc thủy như đắp đê, đắp đất trị thủy ngăn sống, thủy khắc hỏa để chữa cháy, hỏa khắc kìm để nấu kim loại, loại để cưa, chặt gỗ). kim khắc mộc dùng dụng cụ kim
+- Trong cơ thể con người: Can mộc khắc tỷ thổ: tỷ thổ khắc thận thủy, thận thủy khắc tần hóa, tâm hỏa khắc phể kim, phế kim khắc can mộc.
+
+Trong điều kiện bất thường hay bệnh lý, có hiện tượng hành nọ, tạng nọ khắc hành kia, tạng kiể quá mạnh gọi là tương thứm, tạng nọ không khắc được hành kia, tạng kia gọi là tương vũ
+
+- Thí dụ về tương thìa: Bình thường can mộc khắc tỷ thổ nếu can khắc tỷ quá mạnh sẽ gâ hiện tượng đau dạ dày, ỉa chảy do thần kinh, khi chữa phải bình can (hạ hưng phấn của can) kiện tỷ (nâng cao sự hoạt động của tỷ).
+
+Thí dụ về tương vũ Bình thường tỷ thổ khắc thận thuỷ, nếu tỷ không khắc được thận thu sẽ gây ứ nước như trong bệnh ỉa chảy kéo dài gây phù dinh dưỡng, khi chữa phải kiện tỷ (nâng ca sự hoạt động của tỷ) và lợi niệu (để làm mất phù thũng).

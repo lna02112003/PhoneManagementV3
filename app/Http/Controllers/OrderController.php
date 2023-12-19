@@ -13,7 +13,9 @@ class OrderController extends Controller
         $orders = DB::table('order')
             ->join('customer', 'customer.customer_id', '=', 'order.customer_id')
             ->select('order.*', 'customer.*')
+            ->where('order.row_delete', 0)
             ->get();
+
 
         return view('admin.order', ['orders' => $orders]);                     
     }
@@ -53,14 +55,11 @@ class OrderController extends Controller
             'description' => 'required',
         ]);
 
-        // Tìm đơn hàng cần cập nhật
         $order = Order::find($id);
-        // Kiểm tra xem đơn hàng có tồn tại không
         if (!$order) {
             return redirect()->back()->with('error', 'Không tìm thấy đơn hàng');
         }
 
-        // Khai báo biến để lưu trữ status và description
         $status = '';
         $description = '';
 
@@ -80,25 +79,25 @@ class OrderController extends Controller
             $this->CalculateQuantity($id);
         }
 
-        // Cập nhật thông tin đơn hàng
         $order->order_total = $total_order;
         $order->status = $status;
         $order->description = $description;
 
-        // Lưu thay đổi vào cơ sở dữ liệu
         $order->save();
 
-        // Chuyển hướng về trang trước với thông báo thành công
         return redirect()->route('admin.order')->with('success', 'Order updated successfully');
     }
 
     public function destroy($id)
     {
-        // Xóa danh mục dựa trên ID
-        Order::destroy($id);
+        try {
+            $order = Order::findOrFail($id);
+            $order->update(['row_delete' => '1']);
 
-        // Chuyển hướng sau khi xóa thành công
-        return redirect()->route('admin.order')->with('success', 'Order deleted successfully');
+            return redirect()->route('admin.order')->with('success', 'Order deleted successfully');
+        } catch (\Exception $e) {
+            return redirect()->route('admin.order')->with('error', 'Failed to delete order');
+        }
     }
     public function viewOrderDetail($order_id){
         $orderDetails = DB::table('order_detail as od')

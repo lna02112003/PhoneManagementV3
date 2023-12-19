@@ -64,7 +64,7 @@
                     @endif
                 </label>
             </div>
-            <form action="{{route('homepage')}}" method="get">
+            <form action="{{route('root')}}" method="get">
                 @csrf
                 <button type="submit" name="btn" class="btn btn-success">Quay lại trang chủ</button>
             </form>
